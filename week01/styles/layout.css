@@ -1,0 +1,95 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2e3b4e;
+    color: white;
+    padding: 20px;
+}
+
+header h2 {
+    margin-bottom: 10px;
+}
+
+/* Navigation using Flexbox */
+nav {
+    background-color: #000;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00b4d8;
+    border-radius: 4px;
+}
+
+/* Main layout using Grid */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* side-by-side layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: #d3d3d3;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.aside-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #2e3b4e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: 500;
+    border-top: 3px solid #00b4d8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        grid-template-columns: 1fr; /* stack main and aside */
+    }
+}
