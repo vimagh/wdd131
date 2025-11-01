@@ -25,7 +25,6 @@ header h2 {
     margin-bottom: 10px;
 }
 
-/* Navigation using Flexbox */
 nav {
     background-color: #000;
     border-radius: 5px;
@@ -52,10 +51,9 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 
-/* Main layout using Grid */
 main {
     display: grid;
-    grid-template-columns: 3fr 1fr; /* side-by-side layout */
+    grid-template-columns: 3fr 1fr; 
     gap: 20px;
     padding: 20px;
 }
@@ -72,17 +70,16 @@ main {
     border-radius: 8px;
 }
 
-/* Footer */
 footer {
     background-color: #2e3b4e;
     color: white;
     text-align: center;
     padding: 15px;
-    font-weight: 500;
-    border-top: 3px solid #00b4d8;
+    font-weight: 600;
+    
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -90,6 +87,6 @@ footer {
     }
 
     main {
-        grid-template-columns: 1fr; /* stack main and aside */
+        grid-template-columns: 1fr;
     }
 }
