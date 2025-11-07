@@ -1,0 +1,87 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* ✅ Navigation using Flexbox */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0 0;
+  gap: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* ✅ Hover effect */
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* ✅ Center main and limit width */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Gallery layout */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr; /* ✅ one column on mobile */
+  gap: 1em;
+  margin-top: 1em;
+}
+
+/* Figures */
+figure {
+  margin: 0;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  padding: 0.5em;
+  font-size: 0.9em;
+  background: #f4f4f4;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+  font-size: 0.85em;
+}

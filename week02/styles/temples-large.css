@@ -1,0 +1,14 @@
+@media (min-width: 600px) {
+  /* ✅ Grid layout with multiple columns on larger screens */
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav ul {
+    gap: 2em;
+  }
+
+  nav a {
+    font-size: 1.1em;
+  }
+}
