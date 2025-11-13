@@ -1,0 +1,57 @@
+
+.card {
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+  margin: 0.8rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.card h2 {
+  background: #1e816d;
+  color: #fff;
+  text-align: center;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.weather-icon {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.weather-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+.mobile-data-card,
+.mobile-weather-card {
+  display: none;
+}
+
+
+@media (max-width: 700px) {
+  .overlay {
+    display: none;
+  }
+
+  .mobile-data-card,
+  .mobile-weather-card {
+    display: block;
+  }
+
+  .hero-image {
+    content: url("images/cub.jpg"); /* Mobile-specific image */
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}

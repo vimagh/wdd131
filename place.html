@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigeria</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Nigeria</h1>
+  </header>
+
+  <main>
+    <section class="image-section">
+      <picture>
+        <source srcset = "images/cub.jpg" media = "(max-width: 700px)">
+        <img src="images/leopard.webp" alt="Lemurs in Madagascar" class="hero-image">
+      </picture>
+
+      <!-- Overlay cards (visible on large screens only) -->
+      <div class="overlay data-card">
+        <h2>Data</h2>
+        <ul>
+          <li><span>Area:</span> <span>923,768 sq km</span></li>
+          <li><span>Population:</span> <span>200,000,000</span></li>
+          <li><span>Capital:</span> <span>Abuja</span></li>
+          <li><span>Languages:</span> <span>Hausa,Igbo,Yoruba</span></li>
+          <li><span>Currency:</span> <span>Naira</span></li>
+          <li><span>Time Zone:</span> <span>GMT+1</span></li>
+          <li><span>Calling Code:</span> <span>+234</span></li>
+          <li><span>Internet TLD:</span> <span>.ng</span></li>
+        </ul>
+      </div>
+
+      <div class="overlay weather-card">
+        <h2>Weather</h2>
+        <div class="weather-icon">
+            <img src="images/sunny.svg" alt="Weather Icon">
+        </div>
+        <ul>
+          <li><span>Temperature:</span> <span>26°C</span></li>
+          <li><span>Conditions:</span> <span>Sunny</span></li>
+          <li><span>Wind:</span> <span>3 km/h</span></li>
+          <li><span>Wind Chill:</span> <span>6°C</span></li>
+          <li><span>Wind Chill:</span> <span id="windchill">--</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Separate sections that appear below image on small screens -->
+    <section class="card mobile-data-card">
+      <h2>Data</h2>
+      <ul>
+        <li><span>Area:</span> <span>923,768 sq km</span></li>
+        <li><span>Population:</span> <span>27,691,018</span></li>
+        <li><span>Capital:</span> <span>Abuja</span></li>
+        <li><span>Languages:</span> <span>Hausa,Igbo,Yoruba</span></li>
+        <li><span>Currency:</span> <span>Naira</span></li>
+        <li><span>Time Zone:</span> <span>GMT +1</span></li>
+        <li><span>Calling Code:</span> <span>+234</span></li>
+        <li><span>Internet TLD:</span> <span>.ng</span></li>
+      </ul>
+    </section>
+
+    <section class="card mobile-weather-card">
+      <h2>Weather</h2>
+      <div class="weather-icon">
+        <img src="images/sunny.svg" alt="Weather Icon">
+      </div>
+      <ul>
+        <li><span>Temperature:</span> <span>26°C</span></li>
+        <li><span>Conditions:</span> <span>Sunny</span></li>
+        <li><span>Wind:</span> <span>3 km/h</span></li>
+        <li><span>Wind Chill:</span> <span>6°C</span></li>
+        <li><span>Wind Chill:</span> <span id="windchill">--</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2025 Vimagh Solomon-WDD131 Nigeria – Last modified:
+      <span id="date"></span>
+    </p>
+  </footer>
+
+
+</body>
+</html>

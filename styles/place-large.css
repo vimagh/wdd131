@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eaf8e8;
+  color: #222;
+  text-align: center;
+}
+
+
+header {
+  background: #08b34f;
+  color: #fff;
+  padding: 1.2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+
+.image-section {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid #08b34f;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  content: url("images/cub.jpg"); /* Default: large screen image */
+  border-bottom: 4px solid #08b34f;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  text-align: left;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.overlay h2 {
+  background: #1e816d;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.data-card {
+  top: 10%;
+  left: 5%;
+  width: 220px;
+}
+
+.weather-card {
+  bottom: 10%;
+  right: 5%;
+  width: 200px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 3px 0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.weather-icon {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.weather-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+footer {
+  background: #08b34f;
+  color: white;
+  padding: 1rem;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
