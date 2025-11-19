@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #faf8f8;
+  color: rgb(90, 84, 84);
+  text-align: center;
+}
+
+main {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Display images in one centered column */
+main img {
+  width: 400px;
+  display: block;
+  margin: 40px auto;
+  opacity: 0;
+  animation: fadeIn 2s forwards ease-in;
+}
+
+/* Fade-from-black animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: brightness(0%);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+}
+
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+  background: #000;
+  margin-top: 30px;
+}

@@ -1,0 +1,22 @@
+
+@media (min-width: 700px) {
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hamburger {
+        display: left;
+    }
+
+    #navMenu {
+        display: flex !important;
+        gap: 20px;
+    }
+
+    .temple-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
