@@ -56,9 +56,7 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
 
-  // -------------------------------------
-  // 3 NEW TEMPLES (ADDED BY YOU)
-  // -------------------------------------
+
 
   {
     templeName: "Rome Italy Temple",
@@ -87,17 +85,13 @@ const temples = [
 ];
 
 
-// ===========================
-// DOM REFERENCES
-// ===========================
+
 const container = document.getElementById("templeContainer");
 const navLinks = document.querySelectorAll("nav a");
 
-// ===========================
-// DISPLAY FUNCTION
-// ===========================
+
 function displayTemples(list) {
-  container.innerHTML = ""; // clear container
+  container.innerHTML = ""; 
 
   list.forEach(t => {
     const card = document.createElement("div");
@@ -115,12 +109,10 @@ function displayTemples(list) {
   });
 }
 
-// Show all at start
+
 displayTemples(temples);
 
-// ===========================
-// FILTERING
-// ===========================
+
 navLinks.forEach(link => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -143,22 +135,18 @@ navLinks.forEach(link => {
   });
 });
 
-// ===========================
-// FOOTER
-// ===========================
+
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// ===========================
-// HAMBURGER MENU
-// ===========================
+
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("navMenu");
 
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 
-  // Change between ☰ and X
+ 
   hamburger.textContent =
     hamburger.textContent === "✖" ? "☰" : "✖";
 });
