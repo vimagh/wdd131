@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/forms.css">
+  <script src="scripts/forms.js" defer></script>
+  <title>Product Review Form</title>
+
+</head>
+<body>
+
+<h2>Product Review Form</h2>
+
+<form method="get" action="review.html">
+
+  <!-- PRODUCT NAME -->
+  <label for="product">Product Name</label>
+  <select id="product" name="product" required>
+    <option value="" disabled selected>Select a Product ...</option>
+  </select>
+
+  <!-- OVERALL RATING -->
+  <label>Overall Rating</label>
+  <div class="rating-group">
+    <label><input type="radio" id="rate1" name="rating" value="1" required> 1 Star</label>
+    <label><input type="radio" id="rate2" name="rating" value="2"> 2 Stars</label>
+    <label><input type="radio" id="rate3" name="rating" value="3"> 3 Stars</label>
+    <label><input type="radio" id="rate4" name="rating" value="4"> 4 Stars</label>
+    <label><input type="radio" id="rate5" name="rating" value="5"> 5 Stars</label>
+  </div>
+
+  <!-- INSTALL DATE -->
+  <label for="installDate">Date of Installation</label>
+  <input type="date" id="installDate" name="installDate" required>
+
+  <!-- USEFUL FEATURES -->
+  <label>Which features did you find useful?</label>
+  <div class="feature-group">
+    <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+    <label><input type="checkbox" id="ease" name="features" value="Ease of Use"> Ease of Use</label>
+    <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+    <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+  </div>
+
+  <!-- WRITTEN REVIEW -->
+  <label for="review">Written Review (Optional)</label>
+  <textarea id="review" name="review"></textarea>
+
+  <!-- USER NAME -->
+  <label for="username">Your Name (Optional)</label>
+  <input type="text" id="username" name="username">
+
+  <!-- SUBMIT BUTTON -->
+  <input type="submit" value="Post Review">
+
+</form>
+
+
+</body>
+</html>
