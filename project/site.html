@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pastry Mentoring — Home</title>
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="script/site.js" defer></script>
+  <meta name="description" content="Beginner-friendly gardening guides, tips, and seasonal advice from GreenPath Gardening.">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="branding">
+      <img src="images/logo.png" alt="GreenPath Gardening logo — leaf icon and site name" width="120" height="120" loading="lazy">
+      <div>
+        <h1>Pastry Mentoring</h1>
+        <p class="tagline">A website helping beginners learn pastry making by providing locally tested recipies </p>
+      </div>
+    </div>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <button id="menuToggle" aria-expanded="false" aria-controls="navList">Menu</button>
+      <ul id="navList" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Start your Pastry journey</h2>
+      <p class="lede">Simple, step-by-step tutorials beginners.</p>
+      <a class="cta" href="guides.html">Browse guides</a>
+    </section>
+
+    <section class="featured" aria-labelledby="featured-title">
+      <h3 id="featured-title">Beginner Tips</h3>
+      <div id="tipsContainer" class="tips-grid" aria-live="polite"></div>
+      <form id="tipForm" class="tip-form" aria-label="Add a Baking Tip">
+        <h4>Add a quick tip</h4>
+        <label for="tipText">Tip (max 140 chars)</label>
+        <input id="tipText" name="tipText" maxlength="140" required aria-required="true" placeholder="The best temperature for baking a cake.">
+        <button type="submit">Save tip</button>
+      </form>
+    </section>
+
+    <section class="newsletter" aria-labelledby="news-title">
+      <h3 id="news-title">Patry making Checklist</h3>
+      <p>Choose a pastry and see a quick recipie checklist — saved locally so you can come back to it.</p>
+      <label for="plantSelect">Select pastry:</label>
+      <select id="plantSelect" aria-controls="checklist">
+        <option value="">— choose —</option>
+        <option value="basil">Cake</option>
+        <option value="snake">Doughnut</option>
+        <option value="tomato">Bread</option>
+      </select>
+      <div id="checklist" class="checklist" role="region" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2025 Pastry Mentoring — Built for beginner bakers</p>
+  </footer>
+
+  <noscript><p style="padding:1rem;background:#eee">This site works best with JavaScript enabled.</p></noscript>
+</body>
+</html>
