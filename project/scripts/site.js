@@ -1,8 +1,4 @@
-/* ============================================
-   Pastry Mentoring — Global JavaScript
-   Supports: menu toggle, tips system,
-   pastry checklist, and contact form
-   ============================================ */
+
 
 "use strict";
 
